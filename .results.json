@@ -2,11 +2,11 @@
   "stats": {
     "suites": 6,
     "tests": 5,
-    "passes": 3,
+    "passes": 4,
     "pending": 0,
-    "failures": 2,
-    "start": "2022-04-25T05:33:00.596Z",
-    "end": "2022-04-25T05:33:00.804Z",
+    "failures": 1,
+    "start": "2022-04-25T06:06:37.038Z",
+    "end": "2022-04-25T06:06:37.246Z",
     "duration": 208
   },
   "tests": [
@@ -27,51 +27,44 @@
     {
       "title": "setBestCustomer",
       "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: setBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:21:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "setBestCustomer is not defined"
-      }
+      "err": {}
     },
     {
       "title": "overwrites the best customer",
       "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: overwriteBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:29:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "overwriteBestCustomer is not defined"
-      }
+      "err": {}
     },
     {
       "title": "unsuccessfully tries to reassign the least favorite customer",
       "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
       "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'",
+        "showDiff": true,
+        "actual": "Cannot access 'leastFavoriteCustomer' before initialization",
+        "expected": "Assignment to constant variable.",
+        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'\n    at Context.<anonymous> (test/indexTest.js:37:51)\n    at processImmediate (node:internal/timers:466:21)"
+      }
     }
   ],
   "pending": [],
   "failures": [
     {
-      "title": "setBestCustomer",
-      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: setBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:21:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "setBestCustomer is not defined"
-      }
-    },
-    {
-      "title": "overwrites the best customer",
-      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: overwriteBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:29:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "overwriteBestCustomer is not defined"
+        "message": "expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'",
+        "showDiff": true,
+        "actual": "Cannot access 'leastFavoriteCustomer' before initialization",
+        "expected": "Assignment to constant variable.",
+        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'\n    at Context.<anonymous> (test/indexTest.js:37:51)\n    at processImmediate (node:internal/timers:466:21)"
       }
     }
   ],
@@ -91,8 +84,15 @@
       "err": {}
     },
     {
-      "title": "unsuccessfully tries to reassign the least favorite customer",
-      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
